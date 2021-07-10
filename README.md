@@ -2,9 +2,15 @@
 
 ## dotfile start
 
-```$ git clone```
-```$ ./setup```
+```$ make```
 
+## makeを使う理由
+
+makeを使うのは環境依存性の排除を重視しているため。
+dotfilesのセットアップ時は、環境が整っていない状態のためなるべくツールの
+依存性を少なくしなければいけない。
+makeであればたいていのUnixライクシステムで利用できる。
+環境依存性を少なくするベストプラクティスは Bourne Shell，make を使うこと。
 ## setup.sh desc
 
 ```shell

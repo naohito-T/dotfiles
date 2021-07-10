@@ -1,0 +1,52 @@
+{
+  "useTaobaoRegistry": false,
+  "packageManager": "npm",
+  "latestVersion": "4.5.13",
+  "lastChecked": 1621137164776,
+  "presets": {
+    "y": {
+      "useConfigFiles": false,
+      "plugins": {
+        "@vue/cli-plugin-babel": {},
+        "@vue/cli-plugin-typescript": {
+          "classComponent": true,
+          "useTsWithBabel": true
+        },
+        "@vue/cli-plugin-router": {
+          "historyMode": true
+        },
+        "@vue/cli-plugin-vuex": {},
+        "@vue/cli-plugin-eslint": {
+          "config": "standard",
+          "lintOn": [
+            "save"
+          ]
+        },
+        "@vue/cli-plugin-unit-jest": {},
+        "@vue/cli-plugin-e2e-cypress": {}
+      },
+      "vueVersion": "3"
+    },
+    "practice vue-ver3-for-typescript": {
+      "useConfigFiles": true,
+      "plugins": {
+        "@vue/cli-plugin-typescript": {
+          "classComponent": true
+        },
+        "@vue/cli-plugin-router": {
+          "historyMode": true
+        },
+        "@vue/cli-plugin-vuex": {},
+        "@vue/cli-plugin-eslint": {
+          "config": "airbnb",
+          "lintOn": [
+            "save"
+          ]
+        },
+        "@vue/cli-plugin-unit-jest": {},
+        "@vue/cli-plugin-e2e-cypress": {}
+      },
+      "vueVersion": "3"
+    }
+  }
+}

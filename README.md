@@ -18,3 +18,8 @@ for f in .??* # dotfileを列挙
 ```
 
 [参考URL](https://takuzoo3868.hatenablog.com/entry/2017/10/29/033252)
+
+## itermをよくするツールを記載しておく
+
+```$ brew install peco```
+```$ brew install jq```

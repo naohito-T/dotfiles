@@ -53,3 +53,9 @@ setopt PROMPT_SUBST ; PS1='%F{green}%n@%m%f: %F{cyan}%~%f %F{red}$(__git_ps1 "(%
 
 eval "$(anyenv init -)"
 # end
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/tanakanaohitoshi/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/tanakanaohitoshi/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/tanakanaohitoshi/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/tanakanaohitoshi/google-cloud-sdk/completion.zsh.inc'; fi

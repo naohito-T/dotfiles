@@ -2,7 +2,12 @@
 
 ## dotfile start
 
-```$ make```
+```zsh
+# ホームディレクトリ内で実施すること(dotfilesはホームディレクトリに設置する)
+$git clone [project name]
+
+$make
+```
 
 ## makeを使う理由
 
@@ -18,3 +23,8 @@ for f in .??* # dotfileを列挙
 ```
 
 [参考URL](https://takuzoo3868.hatenablog.com/entry/2017/10/29/033252)
+
+## itermをよくするツールを記載しておく
+
+```$ brew install peco```
+```$ brew install jq```

@@ -3,19 +3,20 @@
 alias ll='ls -laG'
 alias cdiff='colordiff'
 
-
 # PATH
 export PATH=/usr/local/opt/postgresql@12/bin:$PATH
 # Vue CLI
 export PATH=/Users/tanakanaohitoshi/.anyenv/envs/nodenv/versions/14.4.0/bin:$PATH
 # Android Studio
 export ANDROID_SDK=/Users/tanakanaohitoshi/Library/Android/sdk
-# Android Platform-toolsexport 
+# Android Platform-toolsexport
 PATH=/Users/username/Library/Android/sdk/platform-tools:$PATH
+# rdenv
+export PATH="$HOME/.rbenv/bin:$PATH"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/tanakanaohitoshi/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$('/Users/tanakanaohitoshi/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2>/dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
@@ -44,7 +45,8 @@ GIT_PS1_SHOWSTASHSTATE=true
 GIT_PS1_SHOWUPSTREAM=auto
 
 # プロンプトの表示設定(好きなようにカスタマイズ可)
-setopt PROMPT_SUBST ; PS1='%F{green}%n@%m%f: %F{cyan}%~%f %F{red}$(__git_ps1 "(%s)")%f
+setopt PROMPT_SUBST
+PS1='%F{green}%n@%m%f: %F{cyan}%~%f %F{red}$(__git_ps1 "(%s)")%f
 \$ '
 
 # <<< end >>>
@@ -52,6 +54,10 @@ setopt PROMPT_SUBST ; PS1='%F{green}%n@%m%f: %F{cyan}%~%f %F{red}$(__git_ps1 "(%
 # anyenv
 
 eval "$(anyenv init -)"
+# end
+
+# rdenv
+eval "$(rbenv init - zsh)"
 # end
 
 # The next line updates PATH for the Google Cloud SDK.

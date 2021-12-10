@@ -2,7 +2,12 @@
 
 ## dotfile start
 
-```$ make```
+```zsh
+# ホームディレクトリ内で実施すること(dotfilesはホームディレクトリに設置する)
+$git clone [project name]
+
+$make
+```
 
 ## makeを使う理由
 

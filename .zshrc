@@ -1,18 +1,21 @@
-# alias configure
+##########################
+##  zsh lib load script ##
+##########################
+ZSH_LIB_HOME="${HOME}/dotfiles/lib/zsh"
 
-alias ll='ls -laG'
-alias cdiff='colordiff'
-
-# PATH
-export PATH=/usr/local/opt/postgresql@12/bin:$PATH
-# Vue CLI
-export PATH=/Users/tanakanaohitoshi/.anyenv/envs/nodenv/versions/14.4.0/bin:$PATH
-# Android Studio
-export ANDROID_SDK=/Users/tanakanaohitoshi/Library/Android/sdk
-# Android Platform-toolsexport
-PATH=/Users/username/Library/Android/sdk/platform-tools:$PATH
-# rdenv
-export PATH="$HOME/.rbenv/bin:$PATH"
+function loadLib() {
+    lib=${1:?"You have to specify a library file"}
+    if [ -f "${lib}" ]; then
+        source "${lib}"
+    fi
+}
+# alias load
+loadLib $ZSH_LIB_HOME/alias/alias.sh
+# function load
+loadLib $ZSH_LIB_HOME/func/function.sh
+# path load
+loadLib $ZSH_LIB_HOME/path/path.sh
+# path load
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!

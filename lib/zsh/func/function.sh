@@ -15,7 +15,7 @@ pecoHistorySelect() {
 zle -N pecoHistorySelect
 bindkey '^h' pecoHistorySelect
 
-# ghq & peco
+# ghq & pecoの設定
 # start → ^p
 pecoList() {
   local selectDir=$(ghq list -p | peco --query "${LBUFFER}")

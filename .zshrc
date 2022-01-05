@@ -55,12 +55,15 @@ PS1='%F{green}%n@%m%f: %F{cyan}%~%f %F{red}$(__git_ps1 "(%s)")%f
 # <<< end >>>
 
 # anyenv
-
 eval "$(anyenv init -)"
 # end
 
 # rdenv
 eval "$(rbenv init - zsh)"
+# end
+
+# direnv
+eval "$(direnv hook zsh)"
 # end
 
 # The next line updates PATH for the Google Cloud SDK.

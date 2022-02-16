@@ -27,3 +27,10 @@ pecoList() {
 }
 zle -N pecoList
 bindkey '^p' pecoList
+
+# cd & ls
+cdls() {
+  # cdがaliasでループされるため\をつける
+  \cd "${1}"
+  ll
+}

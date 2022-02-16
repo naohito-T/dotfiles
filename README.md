@@ -28,3 +28,15 @@ for f in .??* # dotfileを列挙
 
 ```$ brew install peco```
 ```$ brew install jq```
+
+## pwgen(パスワード生成)
+
+[参考URL](https://qiita.com/icedpasta1832/items/57d0d9805f04b6e79875)
+
+`$ brew install pwgen`
+
+- 16文字のランダムパスワードを1つ生成する
+`$ pwgen -s 16 1`
+
+- 32文字の記号ありランダムパスワードを4つ生成する
+`$ pwgen -s -y 32 4`

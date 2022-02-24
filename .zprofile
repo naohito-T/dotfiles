@@ -1,8 +1,8 @@
 # bash_profile
 
-if [ -f ~/.bashrc ]; then
-    . ~/.bashrc
-fi
+# if [ -f ~/.bashrc ]; then
+#     . ~/.bashrc
+# fi
 
 ### PATH ###
 export PATH="/usr/local/opt/php@7.4/bin:$PATH"

@@ -26,8 +26,8 @@ for f in .??* # dotfileを列挙
 
 ## itermをよくするツールを記載しておく
 
-```$ brew install peco```
-```$ brew install jq```
+`$ brew install peco`
+`$ brew install jq`
 
 ## pwgen(パスワード生成)
 

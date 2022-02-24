@@ -2,7 +2,7 @@
 
 # alias configure
 
-alias ll='ls -GAF'
+alias ll='ls -GAlF'
 alias cdiff='colordiff'
 alias gc='gitmoji -c'
 alias gg='ghq get'

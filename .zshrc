@@ -15,7 +15,6 @@ loadLib $ZSH_LIB_HOME/alias/alias.sh
 loadLib $ZSH_LIB_HOME/func/function.sh
 # path load
 loadLib $ZSH_LIB_HOME/path/path.sh
-# path load
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -54,17 +53,28 @@ PS1='%F{green}%n@%m%f: %F{cyan}%~%f %F{red}$(__git_ps1 "(%s)")%f
 
 # <<< end >>>
 
+# ---------------------------------------------------------------#
+#  					  Anyenv Management                          #
+# ---------------------------------------------------------------#
+
+# @memo anyenvはnodevnやpyenvなどをanyenvのコマンドから統一できるツール
+
 # anyenv
 eval "$(anyenv init -)"
-# end
+
+# pyenvを追加する(これを実行しないとsystemに乗っ取られる)
+export PATH=$(pyenv root)/shims:$PATH
 
 # rdenv
 eval "$(rbenv init - zsh)"
 # end
 
+# ---------------------------------------------------------------#
+#    					  Env Management                         #
+# ---------------------------------------------------------------#
+
 # direnv
 eval "$(direnv hook zsh)"
-# end
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/tanakanaohitoshi/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/tanakanaohitoshi/google-cloud-sdk/path.zsh.inc'; fi

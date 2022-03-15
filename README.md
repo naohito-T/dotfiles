@@ -1,6 +1,10 @@
-# The best dotfiles setup
+# Dotfiles
 
-## dotfile start
+## Description
+
+This is a repository with my configuration files, those are verified on Linux / MacOS.
+
+## Setup
 
 ```zsh
 # ホームディレクトリ内で実施すること(dotfilesはホームディレクトリに設置する)

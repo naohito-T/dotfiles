@@ -1,7 +1,7 @@
-#! /bin/sh
+#!/usr/bin/env bash
 
 ############################
-# zsh function load script #
+# zsh utils  load script #
 ############################
 
 # pecoの設定(履歴を検索する)
@@ -34,3 +34,25 @@ cdls() {
   \cd "${1}"
   ll
 }
+
+# peco ssh
+peco-ssh () {
+  local selected_host=$(awk '
+  tolower($1)=="host" {
+    for (i=2; i<=NF; i++) {
+      if ($i !~ "[*?]") {
+        print $i
+      }
+    }
+  }
+  ' ~/.ssh/config | sort | peco --query "$LBUFFER")
+  if [ -n "$selected_host" ]; then
+    # ここでsshのオプションを指定できる
+    BUFFER="ssh ${selected_host}"
+    zle accept-line
+  fi
+  zle clear-screen
+}
+zle -N peco-ssh
+# Ctrl + \ に割当
+bindkey '^@' peco-ssh

@@ -1,4 +1,9 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
+# ---------------------------------------------------------------#
+# Desc: Make Symbolic link                                       #
+# Author: naohito-T                                              #
+# ---------------------------------------------------------------#
 
 echo -e "Creating symbolic link of dotfiles..."
 

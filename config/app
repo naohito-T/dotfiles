@@ -1,0 +1,12 @@
+#!/usr/bin/bash
+
+# entry point 
+# installにかぎっては適宜聞く
+
+# まずは現在のshellを確認し適宜対応
+if [ $SHELL == '/bin/zsh' ]; then
+
+else 
+
+fi
+

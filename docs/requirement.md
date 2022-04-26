@@ -18,3 +18,7 @@
 
 - fishなど Other Shellには対応しない。
 - Windowsには対応しない。
+
+## Tips
+
+[zsh](https://gist.github.com/atakig/1555225/ede34a0fc6b44b4d8416d8917b9d90d908346e19)

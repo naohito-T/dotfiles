@@ -4,6 +4,9 @@
 
 This is a repository with my configuration files, those are verified on Linux / MacOS.
 
+Author: naohito-T
+Date: 2022/04/26
+
 ## Setup
 
 ```zsh
